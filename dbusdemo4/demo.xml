@@ -1,0 +1,19 @@
+<!DOCTYPE node PUBLIC "-//freedesktop//DTD D-BUS Object Introspection 1.0//EN" "http://www.freedesktop.org/standards/dbus/1.0/introspect.dtd">
+<node>
+  <interface name="a.b.c.d">
+    <property name="nickname" type="s" access="readwrite"/>
+    <signal name="sayHello">
+    </signal>
+    <method name="helloJerry">
+      <arg type="v" direction="out"/>
+      <arg name="name" type="s" direction="in"/>
+    </method>
+    <method name="helloTom">
+      <arg type="v" direction="out"/>
+    </method>
+    <method name="hello">
+      <arg name="MyType" type="a(i)" direction="in"/>
+      <annotation name="org.qtproject.QtDBus.QtTypeName.In0" value="MyType"/>
+    </method>
+  </interface>
+</node>
