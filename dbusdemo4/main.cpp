@@ -38,7 +38,7 @@ Maps or dictionaries是元素对的数组，
 
 /*
 扩展类型系统：
-为了在QtDBus模块使用自定义类型，自定义类性必须使用Q_DECLARE_METATYPE()声明为Qt元类型，
+为了在QtDBus模块使用自定义类型，自定义类型必须使用Q_DECLARE_METATYPE()声明为Qt元类型，
 使用qDBusRegisterMetaType()函数注册。
 流操作符会被注册系统自动找到。
 QtDBus模块为Qt容器类使用数组和map提供了模板特化，例如QMap和QList，不必实现流操作符函数。

@@ -23,6 +23,14 @@ int main(int argc, char *argv[])
         // TODO 启动APP等逻辑
         printf("y\n");
         qDebug("y");
+
+        QObject::connect(&dbusDemo, &DBusDemo::sayHelloHelper, &dbusDemo, [&](){
+            //不能用emit直接发送信号
+            QDBusMessage message = QDBusMessage::createSignal("/l/m/n", "a.b.c.d", "sayHello");
+            dbus.send(message);
+            qDebug("have sent");
+        });
+
     } else {
         // TODO 通过上述D-Bus方法调用本服务的接口完成业务逻辑
 

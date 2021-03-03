@@ -1,5 +1,5 @@
 /*
- * 这个demo主要演示使用QDBusMessage无法传参
+ * 这个demo主要演示使用QDBusMessage设置参数连接session bus
 */
 #include <QCoreApplication>
 #include <QDBusMessage>

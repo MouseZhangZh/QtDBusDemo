@@ -6,6 +6,7 @@
 #include <QDBusInterface>
 #include <QDBusReply>
 #include <QCoreApplication>
+#include <QObject>
 #include <QDebug>
 
 class DBusDemo: public QObject
@@ -26,13 +27,15 @@ public:
 public slots:
     // D-Bus方法
     QDBusVariant helloJerry(const QString &name) { return QDBusVariant("Hello " + name); }
-    QDBusVariant helloTom() { return QDBusVariant("Hello Tom");
-                              emit sayHello();
-                            }
+    QDBusVariant helloTom() {
+        emit sayHelloHelper();
+        return QDBusVariant("Hello Tom"); }
 
 signals:
     // D-Bus信号
     void sayHello();
+
+    void sayHelloHelper();
 
 private:
     QString myNickname = "Jerry";

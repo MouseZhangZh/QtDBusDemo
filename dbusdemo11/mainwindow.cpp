@@ -8,7 +8,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
 
     QDBusConnection::sessionBus().connect("x.y.z",
-                                          "/",
+                                          "/l/m/n",
                                           "a.b.c.d",
                                           "sayHello",
                                           this,
