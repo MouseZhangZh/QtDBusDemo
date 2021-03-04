@@ -4,6 +4,16 @@
 
 参考资料在我的[blog](https://mousezhangzh.github.io)(有待补充，其实看完参考资料里的东西就够用了，深入理解dbus仍需翻阅源码等)，同样欢迎issue和pull request.
 
+不想从一堆资料中翻的话，可以主要参考这4个：
+
+[Qt高级——D-Bus快速入门](https://blog.51cto.com/9291927/2118184)
+
+[Qt高级——QtDBus快速入门](https://blog.51cto.com/9291927/2118468)
+
+[QtDBus快速入门](https://www.cnblogs.com/chendeqiang/p/12861670.html)
+
+[QT D-Bus 复杂参数传递](https://www.cnblogs.com/skogkatt/archive/2015/01/17/4231225.html)
+
 # 目录介绍(标号即为Demo序号)
 
 0. 如何创建session bus
