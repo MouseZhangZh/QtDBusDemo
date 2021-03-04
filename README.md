@@ -2,7 +2,7 @@
 
 对QtDBus的一个小总结，难免有错误或不足之处，欢迎issue和pull request ! >_<
 
-参考资料在我的[blog](mousezhangzh.github.io)(有待补充，其实看完参考资料里的东西就够用了，深入理解dbus仍需翻阅源码等)，同样欢迎issue和pull request.
+参考资料在我的[blog](https://mousezhangzh.github.io)(有待补充，其实看完参考资料里的东西就够用了，深入理解dbus仍需翻阅源码等)，同样欢迎issue和pull request.
 
 # 目录介绍(标号即为Demo序号)
 
